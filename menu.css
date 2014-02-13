@@ -1,0 +1,67 @@
+/* CSS CODE FOR A MENU, A NICE ONE. */
+ 
+.menu,
+.menu ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    list-style-position:outside;
+    position:relative;
+    line-height:1.5em;
+}
+ 
+.menu a{
+    display:block;
+    padding:0px 5px;
+    border:1px solid #CCC;
+    color:#fff;
+    text-decoration:none;
+    background-color:#CCC;
+}
+ 
+.menu a:hover{
+    background-color:#fff;
+    color:#333;
+}
+ 
+.menu li{
+    float:left;
+    position:relative;
+}
+ 
+.menu ul {
+    position:absolute;
+    display:none;
+    width:12em;
+    top:1.5em;
+}
+ 
+.menu li ul a{
+    width:12em;
+    height:auto;
+    float:left;
+}
+ 
+.menu ul ul{
+    top:auto;
+}      
+ 
+.menu li ul ul {
+    left:12em;
+    margin:0px 0 0 10px;
+}
+ 
+.menu li:hover ul ul,
+.menu li:hover ul ul ul,
+.menu li:hover ul ul ul ul{
+    display:none;
+}
+ 
+.menu li:hover ul,
+.menu li li:hover ul,
+.menu li li li:hover ul,
+.menu li li li li:hover ul{
+    display:block;
+    position:absolute;
+    z-index:5000;
+}
